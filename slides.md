@@ -73,6 +73,55 @@ layout: quote
 layout: section
 ---
 
+# How People Browse the Web?
+
+---
+layout: intro-image-right
+image: '/images/mouse.jpg'
+---
+
+# Mouse
+
+
+---
+layout: intro-image-right
+image: '/images/keyboard.png'
+---
+
+# Keyboard
+
+---
+layout: intro-image-right
+image: '/images/head-wand.jpg'
+---
+
+# Head Wand
+
+---
+layout: intro-image-right
+image: '/images/mouth-stick.jpg'
+---
+
+# Mouth Stick
+
+---
+layout: intro-image-right
+image: '/images/single-switch.jpg'
+---
+
+# Single Switch
+
+---
+layout: intro-image-right
+image: '/images/screen-reader.jpg'
+---
+
+# Screen Reader
+
+---
+layout: section
+---
+
 # Any Complaints?
 
 ---
@@ -126,7 +175,7 @@ layout: bullets
 layout: section
 ---
 
-# Accessibility Issue
+# Let's Prevent That
 
 ---
 layout: bullets
