@@ -121,6 +121,12 @@ image: '/images/mouse.jpg'
 
 # Mouse
 
+---
+layout: intro-image-right
+image: '/images/touchpad.jpg'
+---
+
+# Trackpad
 
 ---
 layout: intro-image-right
@@ -232,7 +238,7 @@ layout: bullets
 // Bad example, no alt text ❌
 <img src="bandung.jpg" />
 
-// Bad example, we already know that was picture ❌
+// Bad example, we already know that was a picture ❌
 <img alt="Picture of Bandung" src="bandung.jpg" />
 
 // Good example ✅
@@ -262,7 +268,7 @@ layout: bullets
 
 ```html
 // Bad example, use "button" instead ❌
-<div onclick="submitForm()">Click Me</div>
+<div onclick="btnClicked()">Click Me</div>
 
 // Bad example, use "h1" instead ❌
 <p class="header-1" />
@@ -271,10 +277,10 @@ layout: bullets
 <a href="twitter.com">Navigate to Twitter</a>
 ```
 
-- If forced, you can use ARIA attributes to mimic it
+- If have to, you can use ARIA attributes to mimic it
 
 ```html
-// Mimic 'button' element into a 'div'
+// Imitate 'button' element into a 'div'
 <div tabindex="0" role="button" class="button" onclick="btnClicked()" onKeyUp="btnClicked()">
   Click Me
 </div>
