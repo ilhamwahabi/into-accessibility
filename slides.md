@@ -68,3 +68,56 @@ layout: quote
 ---
 
 # "Currently around 10 per cent of the total world's population, or roughly 650 million people, live with a disability."
+
+---
+layout: section
+---
+
+# Any Complaints?
+
+---
+layout: quote
+---
+
+# "Amazon were sued in 2018 on claims that their website was inaccessible to the blind and visually impaired"
+
+
+### The lawsuit claimed that the website Amazon.com did not provide text alternatives for non-text content on its website, blocking screen-reading software from presenting information to visually impaired users
+
+
+---
+layout: quote
+---
+
+# "Burger King was subject to an ADA lawsuit in 2018."
+
+### It explained that every time the claimant visited the website, they experienced problems that prevented from accessing key information about their goods and services.
+
+---
+layout: quote
+---
+
+# "In 2012, it was claimed that Netflix, failed to provide adequate closed captioning on its 'Watch Instantly' program."
+
+### A settlement was agreed and Netflix agreed to quickly provide captions on newly released content.
+
+---
+layout: bullets
+---
+
+## the list goes on:
+
+* Apple
+* Nike
+* Hulu
+* Bank of America
+* Rolex
+* eHarmony
+* NBA
+* and many more ...
+
+<br>
+<br>
+<br>
+
+# Your company next ???
