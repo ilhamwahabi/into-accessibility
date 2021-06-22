@@ -54,6 +54,13 @@ layout: section
 layout: quote
 ---
 
+# "About 30.38 million Indonesians — 14.2 percent of population — had a disability in 2018 "
+Survei Sosial Ekonomi Nasional
+
+---
+layout: quote
+---
+
 # "About 56.7 million Americans — 19 percent of the population — had a disability in 2010"
 
 ---
@@ -68,6 +75,27 @@ layout: quote
 ---
 
 # "Currently around 10 per cent of the total world's population, or roughly 650 million people, live with a disability."
+
+---
+layout: bullets
+---
+
+# Developer Should Care Because:
+
+<br>
+<br>
+<br>
+
+## We're making it inaccessible
+<br>
+
+## Human rights
+<br>
+
+## Legal issue
+<br>
+
+## Reach a larger audience
 
 ---
 layout: section
@@ -208,7 +236,8 @@ layout: bullets
 ---
 
 ## Semantic HTML
-- There is an element for that
+- Always prefer use appropriate element
+- Heading element (h1-h6) should be sorted
 
 <br>
 
