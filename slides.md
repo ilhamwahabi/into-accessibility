@@ -34,7 +34,7 @@ Let's create a better web for everyone!
 Follow me on [Twitter](https://twitter.com/ilhamwahabigx) and [Github](https://github.com/iwgx) 👋
 
 ---
-layout: section
+layout: statement
 ---
 
 # What is Accessibility?
@@ -46,7 +46,7 @@ layout: quote
 # "Web accessibility means that people with disabilities can use the web (perceive, understand, navigate, interact, contribute)"
 
 ---
-layout: section
+layout: statement
 ---
 
 # Why Accessibility Important?
@@ -109,7 +109,7 @@ layout: bullets
 * Reach a larger audience
 
 ---
-layout: section
+layout: statement
 ---
 
 # How People Browse the Web?
@@ -158,7 +158,7 @@ image: '/images/screen-reader.jpg'
 # Screen Reader
 
 ---
-layout: section
+layout: statement
 ---
 
 # Any Complaints?
@@ -211,7 +211,7 @@ layout: bullets
 # Your company next ???
 
 ---
-layout: section
+layout: statement
 ---
 
 # Let's Prevent That
@@ -316,7 +316,7 @@ layout: section
 ## let's save it for the next occasion :)
 
 ---
-layout: section
+layout: statement
 ---
 
 # Tools to Help Us
