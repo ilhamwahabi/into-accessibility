@@ -121,3 +121,64 @@ layout: bullets
 <br>
 
 # Your company next ???
+
+---
+layout: section
+---
+
+# Accessibility Issue
+
+---
+layout: bullets
+---
+
+## Image Alt Text
+- Make it accurate
+- Make it concise
+- Don't be redundant
+- Don't use "image of" or "graphic of"
+
+<br>
+
+```html
+// Bad example, no alt text ❌
+<img src="bandung.jpg" />
+
+// Bad example, we already know that was picture ❌
+<img alt="Picture of Bandung" src="bandung.jpg" />
+
+// Good example ✅
+<img alt="Scenery of Bandung city" src="bandung.jpg" />
+
+// Good example, if it's just decorative image ✅
+<img alt="" src="pattern.jpg" />
+```
+
+---
+layout: bullets
+---
+
+## Semantic HTML
+- There is an element for that
+
+<br>
+
+```html
+// Bad example, use "button" instead ❌
+<div onclick="submitForm()">Click Me</div>
+
+// Bad example, use "h1" instead ❌
+<p class="header-1" />
+
+// Good example, use tag properly ✅
+<a href="twitter.com">Navigate to Twitter</a>
+```
+
+- If forced, you can use ARIA attributes to mimic it
+
+```html
+// Mimic 'button' element into a 'div'
+<div tabindex="0" role="button" class="button" onclick="btnClicked()" onKeyUp="btnClicked()">
+  Click Me
+</div>
+```
