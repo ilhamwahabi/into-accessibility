@@ -80,22 +80,32 @@ layout: quote
 layout: bullets
 ---
 
-# Developer Should Care Because:
+# Types of Disabilities
 
 <br>
 <br>
+
+* Attention-Deficit/Hyperactivity Disorders
+* Blindness or Low Vision
+* Brain Injuries
+* Deaf/Hard-of-Hearing
+* Learning Disabilities
+* Physical Disabilities
+* Speech and Language Disabilities
+
+---
+layout: bullets
+---
+
+# Developer Should Care Because
+
+<br>
 <br>
 
-## We're making it inaccessible
-<br>
-
-## Human rights
-<br>
-
-## Legal issue
-<br>
-
-## Reach a larger audience
+* We're making it inaccessible
+* Human rights
+* Legal issue
+* Reach a larger audience
 
 ---
 layout: section
@@ -235,9 +245,17 @@ layout: bullets
 layout: bullets
 ---
 
+## ARIA Attributes
+
+<br>
+
+---
+layout: bullets
+---
+
 ## Semantic HTML
 - Always prefer use appropriate element
-- Heading element (h1-h6) should be sorted
+- Use sorted headings (h1-h6) and landmarks
 
 <br>
 
@@ -260,3 +278,44 @@ layout: bullets
   Click Me
 </div>
 ```
+---
+layout: bullets
+---
+
+## Color Contrast
+
+<br>
+
+---
+layout: bullets
+---
+
+## Focus Management
+
+<br>
+
+---
+layout: bullets
+---
+
+## Announcements
+
+<br>
+
+---
+layout: section
+---
+
+# actually many more...
+
+<br>
+<br>
+<br>
+
+## let's save it for the next occasion :)
+
+---
+layout: section
+---
+
+# Tools to Help Us
