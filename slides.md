@@ -123,20 +123,6 @@ image: '/images/mouse.jpg'
 
 ---
 layout: intro-image-right
-image: '/images/touchpad.jpg'
----
-
-# Trackpad
-
----
-layout: intro-image-right
-image: '/images/keyboard.png'
----
-
-# Keyboard
-
----
-layout: intro-image-right
 image: '/images/head-wand.jpg'
 ---
 
@@ -252,14 +238,6 @@ layout: bullets
 layout: bullets
 ---
 
-## ARIA Attributes
-
-<br>
-
----
-layout: bullets
----
-
 ## Semantic HTML
 - Always prefer use appropriate element
 - Use sorted headings (h1-h6) and landmarks
@@ -286,26 +264,74 @@ layout: bullets
 </div>
 ```
 ---
-layout: bullets
+layout: intro-image-right
+image: '/images/contrast.png'
 ---
 
-## Color Contrast
+# Color Contrast
+- Foreground and background should have enough huge difference
+- You can check in dev tools
 
 <br>
 
 ---
+layout: intro-image-right
+image: '/images/focus.png'
+---
+
+# Focus Management
+- KEEP the focus ring
+- Make interactive element can be focused (button, link, input, etc)
+
+---
 layout: bullets
 ---
 
-## Focus Management
+## ARIA Attributes
+- Accessible Rich Internet Applications
 
 <br>
+
+```html {all|3|4|5|6|all}
+// Try to imitate button
+<span
+  class="button"
+  tabindex="0"
+  role="button"
+  onclick="btnClicked()"
+>
+  Click Me
+</span>
+```
+
+```html {all|2-4|6-9|all}
+// If button don't have text label
+<a aria-label="Login button">
+  <icon>mdi_login</icon>
+</a>
+
+<a aria-labelledby="login_label">
+  <icon>mdi_login</icon>
+</a>
+<span id="login_label"></span>
+```
 
 ---
 layout: bullets
 ---
 
 ## Announcements
+- User know what happened / changed
+
+```jsx
+<div
+  id="error" 
+  aria-live="off" // off | polite | assertive
+  aria-relevant="additions text" // additions, text, removal
+>	
+  { isValid ? '' : errorText }
+</div>
+```
 
 <br>
 
@@ -322,7 +348,8 @@ layout: section
 ## let's save it for the next occasion :)
 
 ---
-layout: statement
+layout: fact
 ---
 
-# Tools to Help Us
+# THAT'S IT
+Let's Discuss!
