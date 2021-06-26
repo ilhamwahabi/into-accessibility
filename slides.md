@@ -37,13 +37,41 @@ Follow me on [Twitter](https://twitter.com/ilhamwahabigx) and [Github](https://g
 layout: statement
 ---
 
-# What is Accessibility?
+# What is Web Accessibility?
 
 ---
 layout: quote
 ---
 
-# "Web accessibility means that people with disabilities can use the web (perceive, understand, navigate, interact, contribute)"
+# "Web accessibility means that people with disabilities can use the web."
+
+---
+layout: statement
+---
+
+# What is Disability?
+
+---
+layout: quote
+---
+
+# "A disability is any medical condition that makes it more difficult for a person to do certain activities or effectively interact with the world around them (socially or materially)"
+
+---
+layout: bullets
+---
+
+# Type of Disabilities
+
+<br>
+
+* Attention-Deficit/Hyperactivity Disorders
+* Blindness or Low Vision
+* Brain Injuries
+* Deaf/Hard-of-Hearing
+* Learning Disabilities
+* Physical Disabilities
+* Speech and Language Disabilities
 
 ---
 layout: statement
@@ -56,13 +84,14 @@ layout: quote
 ---
 
 # "About 30.38 million Indonesians — 14.2 percent of population — had a disability in 2018 "
-Survei Sosial Ekonomi Nasional
+Survei Sosial Ekonomi Nasional Indonesia
 
 ---
 layout: quote
 ---
 
 # "About 56.7 million Americans — 19 percent of the population — had a disability in 2010"
+U.S. Census Bureau
 
 ---
 layout: quote
@@ -76,23 +105,7 @@ layout: quote
 ---
 
 # "Currently around 10 per cent of the total world's population, or roughly 650 million people, live with a disability."
-
----
-layout: bullets
----
-
-# Types of Disabilities
-
-<br>
-<br>
-
-* Attention-Deficit/Hyperactivity Disorders
-* Blindness or Low Vision
-* Brain Injuries
-* Deaf/Hard-of-Hearing
-* Learning Disabilities
-* Physical Disabilities
-* Speech and Language Disabilities
+Disabled World
 
 ---
 layout: bullets
@@ -101,25 +114,17 @@ layout: bullets
 # Developer Should Care Because
 
 <br>
-<br>
 
 * We're making it inaccessible
 * Human rights
 * Legal issue
-* Reach a larger audience
+* To reach a larger audience
 
 ---
 layout: statement
 ---
 
-# How People Browse the Web?
-
----
-layout: intro-image-right
-image: '/images/mouse.jpg'
----
-
-# Mouse
+# Another Way to Browsing
 
 ---
 layout: intro-image-right
@@ -217,20 +222,21 @@ layout: bullets
 - Make it concise
 - Don't be redundant
 - Don't use "image of" or "graphic of"
+- If just decorative, use empty string to make it ignored
 
 <br>
 
 ```html
-// Bad example, no alt text ❌
+<!-- Bad example, no alt text ❌ -->
 <img src="bandung.jpg" />
 
-// Bad example, we already know that was a picture ❌
+<!-- Bad example, we already know that was a picture ❌ -->
 <img alt="Picture of Bandung" src="bandung.jpg" />
 
-// Good example ✅
-<img alt="Scenery of Bandung city" src="bandung.jpg" />
+<!-- Good example ✅ -->
+<img alt="The heavy traffic of Bandung city" src="bandung.jpg" />
 
-// Good example, if it's just decorative image ✅
+<!-- Good example, if it's just decorative image ✅ -->
 <img alt="" src="pattern.jpg" />
 ```
 
@@ -239,38 +245,39 @@ layout: bullets
 ---
 
 ## Semantic HTML
-- Always prefer use appropriate element
-- Use sorted headings (h1-h6) and landmarks
+- Always prefer appropriate native element
+- Use headings hierarchically (h1-h6)
+- Use landmarks (header, footer, etc)
+- If you have to, use proper attributes to mimic it
 
 <br>
 
 ```html
-// Bad example, use "button" instead ❌
+<!-- Bad example, prefer "button" instead ❌ -->
 <div onclick="btnClicked()">Click Me</div>
 
-// Bad example, use "h1" instead ❌
+<!-- Bad example, prefer "h1" instead ❌ -->
 <p class="header-1" />
 
-// Good example, use tag properly ✅
+<!-- Bad example, heading should used hierarchically ❌ -->
+<main>
+  <h1>Ilham Blogs</h1>
+  <h6>Getting Started in React</h6>
+</main>
+
+<!-- Good example, use tag properly ✅ -->
 <a href="twitter.com">Navigate to Twitter</a>
 ```
 
-- If have to, you can use ARIA attributes to mimic it
 
-```html
-// Imitate 'button' element into a 'div'
-<div tabindex="0" role="button" class="button" onclick="btnClicked()" onKeyUp="btnClicked()">
-  Click Me
-</div>
-```
 ---
 layout: intro-image-right
 image: '/images/contrast.png'
 ---
 
 # Color Contrast
-- Foreground and background should have enough huge difference
-- You can check in dev tools
+- Element color and background color should have clear differentiation
+- You can check in dev tools or using browser extension
 
 <br>
 
@@ -289,31 +296,28 @@ layout: bullets
 
 ## ARIA Attributes
 - Accessible Rich Internet Applications
+- ARIA is a set of attributes you can add to HTML elements that define ways to make web content and applications accessible to users with disabilities who use assistive technologies
 
 <br>
 
-```html {all|3|4|5|6|all}
-// Try to imitate button
-<span
-  class="button"
-  tabindex="0"
-  role="button"
-  onclick="btnClicked()"
->
-  Click Me
-</span>
+```jsx {all|3|4|5|6|all}
+// Declare that a element is hidden 
+<div id="popup" tabindex="-1" aria-hidden="true">
+  <p>I'm hidden</p>
+</div>
 ```
 
 ```html {all|2-4|6-9|all}
-// If button don't have text label
+<!-- Adding a label to button without text -->
 <a aria-label="Login button">
   <icon>mdi_login</icon>
 </a>
 
+<!-- You can also doing it this way -->
 <a aria-labelledby="login_label">
   <icon>mdi_login</icon>
 </a>
-<span id="login_label"></span>
+<span id="login_label">Login button</span>
 ```
 
 ---
@@ -322,13 +326,18 @@ layout: bullets
 
 ## Announcements
 - User know what happened / changed
+- Example usage: error message and adding items to the cart
+
+<br>
 
 ```jsx
+// Notify user if there is error
 <div
   id="error" 
-  aria-live="off" // off | polite | assertive
-  aria-relevant="additions text" // additions, text, removal
->	
+  aria-live="assertive"
+  aria-atomic="true"
+  aria-relevant="additions text"
+>
   { isValid ? '' : errorText }
 </div>
 ```
@@ -351,5 +360,5 @@ layout: section
 layout: fact
 ---
 
-# THAT'S IT
+# THAT'S ALL
 Let's Discuss!
