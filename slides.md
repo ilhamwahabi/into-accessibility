@@ -188,8 +188,6 @@ layout: quote
 ### A settlement was agreed and Netflix agreed to quickly provide captions on newly released content.
 
 ---
-layout: bullets
----
 
 ## the list goes on:
 
@@ -215,8 +213,6 @@ layout: statement
 # Let's Prevent That
 
 ---
-layout: bullets
----
 
 ## Image Alt Text
 - Make it accurate
@@ -241,8 +237,6 @@ layout: bullets
 <img alt="" src="pattern.jpg" />
 ```
 
----
-layout: bullets
 ---
 
 ## Semantic HTML
@@ -292,8 +286,6 @@ image: '/images/focus.png'
 - Make interactive element can be focused (button, link, input, etc)
 
 ---
-layout: bullets
----
 
 ## ARIA Attributes
 - Accessible Rich Internet Applications
@@ -321,8 +313,6 @@ layout: bullets
 <span id="login_label">Login button</span>
 ```
 
----
-layout: bullets
 ---
 
 ## Announcements
