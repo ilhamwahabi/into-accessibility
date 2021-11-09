@@ -293,7 +293,7 @@ image: '/images/focus.png'
 
 <br>
 
-```jsx {all|3|4|5|6|all}
+```jsx {all|2|3|all}
 // Declare that a element is hidden 
 <div id="popup" tabindex="-1" aria-hidden="true">
   <p>I'm hidden</p>
