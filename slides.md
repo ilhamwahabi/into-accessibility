@@ -24,9 +24,7 @@ Let's create a better web for everyone!
 
 - 😀 **Name:** - Ilham Wahabi
 - 📝 **Role:** - Frontend Developer
-- 👨‍🎓 **Education:** - Informatics ITB
-- 🤝 **Ex:** - Dekoruma, Stoqo, etc
-- 👨‍💻 **Hobby:** - Hacking at iwgx.io
+- 👨‍💻 **Hobby:** - Hacking at [iwgx.io](https://iwgx.io)
 - 🧑‍ **Currently:** - CTO Bersihin.co
 
 <br>
