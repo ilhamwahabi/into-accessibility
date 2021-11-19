@@ -3,6 +3,7 @@ theme: apple-basic
 layout: intro
 titleTemplate: '%s - Ilham Wahabi'
 colorSchema: 'dark'
+favicon: /images/favicon.png
 ---
 
 # Into Accessibility
