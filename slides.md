@@ -221,16 +221,23 @@ layout: statement
 
 ---
 
-## Image Alt Text
+## Image Alt Text ( \<img alt="..." \/\> )
+
+<v-clicks>
+
 - Make it accurate
 - Make it concise
 - Don't be redundant
 - Don't use "image of" or "graphic of"
 - If just decorative, use empty string to make it ignored
 
+</v-clicks>
+
 <br>
 
-```html
+<v-click>
+
+```html{1-2|4-5|7-8|10-11|all}
 <!-- Bad example, no alt text ❌ -->
 <img src="bandung.jpg" />
 
@@ -243,6 +250,8 @@ layout: statement
 <!-- Good example, if it's just decorative image ✅ -->
 <img alt="" src="pattern.jpg" />
 ```
+
+</v-click>
 
 ---
 
