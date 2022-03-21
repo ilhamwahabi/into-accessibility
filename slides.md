@@ -61,7 +61,7 @@ layout: quote
 layout: bullets
 ---
 
-# Type of Disabilities
+# Type of Disabilities (total or partial)
 
 <br>
 
@@ -72,6 +72,12 @@ layout: bullets
 * Learning Disabilities
 * Physical Disabilities
 * Speech and Language Disabilities
+
+<style>
+li {
+  line-height: 2.5rem;
+}
+</style>
 
 ---
 layout: statement
@@ -108,21 +114,27 @@ layout: quote
 Disabled World
 
 ---
-layout: bullets
+layout: statement
 ---
 
-# Developer Should Care Because
+# Developer Should Care
 
 <br>
 
 <v-clicks>
 
-* We're making it inaccessible
-* Human rights
-* Legal issue
-* To reach a larger audience
+## We're making it inaccessible
+## Human rights
+## Legal issue
+## To reach a larger audience
 
 </v-clicks>
+
+<style>
+h2 {
+  line-height: 3rem;
+}
+</style>
 
 ---
 layout: statement
