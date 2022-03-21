@@ -256,14 +256,21 @@ layout: statement
 ---
 
 ## Semantic HTML
+
+<v-clicks>
+
 - Always prefer appropriate native element
 - Use headings hierarchically (h1-h6)
 - Use landmarks (header, footer, etc)
 - If you have to, use proper attributes to mimic it
 
+</v-clicks>
+
 <br>
 
-```html
+<v-click>
+
+```html{1-2|4-5|7-11|13-14|all}
 <!-- Bad example, prefer "button" instead ❌ -->
 <div onclick="btnClicked()">Click Me</div>
 
@@ -280,6 +287,7 @@ layout: statement
 <a href="twitter.com">Navigate to Twitter</a>
 ```
 
+</v-click>
 
 ---
 layout: intro-image-right
