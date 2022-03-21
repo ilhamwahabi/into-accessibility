@@ -115,10 +115,14 @@ layout: bullets
 
 <br>
 
+<v-clicks>
+
 * We're making it inaccessible
 * Human rights
 * Legal issue
 * To reach a larger audience
+
+</v-clicks>
 
 ---
 layout: statement
@@ -317,6 +321,8 @@ image: '/images/focus.png'
 
 <br>
 
+<v-click>
+
 ```jsx {all|2|3|all}
 // Declare that a element is hidden 
 <div id="popup" tabindex="-1" aria-hidden="true">
@@ -324,18 +330,18 @@ image: '/images/focus.png'
 </div>
 ```
 
-```html {all|2-4|6-9|all}
-<!-- Adding a label to button without text -->
-<a aria-label="Login button">
-  <icon>mdi_login</icon>
-</a>
+</v-click>
 
-<!-- You can also doing it this way -->
-<a aria-labelledby="login_label">
+<v-click>
+
+```html {all|3|2|all}
+<!-- Adding a label to button without text -->
+<button aria-label="Login button">
   <icon>mdi_login</icon>
-</a>
-<span id="login_label">Login button</span>
+</button>
 ```
+
+</v-click>
 
 ---
 
@@ -345,10 +351,9 @@ image: '/images/focus.png'
 
 <br>
 
-```jsx
+```jsx {all|3-5|all}
 // Notify user if there is error
 <div
-  id="error" 
   aria-live="assertive"
   aria-atomic="true"
   aria-relevant="additions text"
@@ -369,11 +374,20 @@ layout: section
 <br>
 <br>
 
+<v-click>
+
 ## let's save it for the next occasion :)
+
+</v-click>
 
 ---
 layout: fact
 ---
 
 # THAT'S ALL
+
+<v-click>
+
 Let's Discuss!
+
+</v-click>
