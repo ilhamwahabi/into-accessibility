@@ -190,6 +190,8 @@ layout: quote
 
 ## the list goes on:
 
+<v-clicks>
+
 * Apple
 * Nike
 * Hulu
@@ -199,11 +201,17 @@ layout: quote
 * NBA
 * and many more ...
 
+</v-clicks>
+
 <br>
 <br>
 <br>
 
-# Your company next ???
+<v-click>
+
+# (Y)our company next ???
+
+</v-click>
 
 ---
 layout: statement
